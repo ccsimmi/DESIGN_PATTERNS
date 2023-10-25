@@ -5,7 +5,7 @@ namespace App\Ducks;
 use App\Behaviours\CanFly;
 use App\Duck;
 
-class MallardDuck extends Duck
+class MarbledDuck extends Duck
 {
     public function __construct()
     {
@@ -14,11 +14,11 @@ class MallardDuck extends Duck
 
     public function getDuckName(): string
     {
-        return 'Mallard duck';
+        return 'Marbled duck';
     }
 
     public function describeDuck(): string
     {
-        return 'A dabbling duck with a silk-green coloured head.';
+        return 'Adults are a pale sandy-brown colour with blotches of white. Females are smaller than males on average.';
     }
 }
