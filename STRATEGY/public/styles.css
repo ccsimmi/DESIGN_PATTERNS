@@ -45,3 +45,22 @@ body {
 .card:hover {
     transform: scale(1.1);
 }
+
+.card__stats p:first-child {
+    font-weight: 600;
+}
+
+.card__stats {
+    position: relative;
+}
+
+.card__stats p:not(p:first-child)::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: green;
+    position: absolute;
+    right: 3px;
+    margin-top: 7px;
+}
